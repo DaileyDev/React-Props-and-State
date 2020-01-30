@@ -1,5 +1,6 @@
 import React from "react";
 
+//Components
 import Footer from "./classes/Footer";
 import Header from "./classes/Header";
 
