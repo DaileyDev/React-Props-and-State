@@ -1,13 +1,26 @@
-import React from 'react';
+import React from "react";
 
+import Footer from "./classes/Footer";
+import Header from "./classes/Header";
 
-function App() {
-  return (
-    <div className="App">
-   <h1>State & Props</h1>
-   <h3>The Need to Know</h3>
-    </div>
-  );
+export default class Layout extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "Kayla",
+    };
+  }
+
+  changeTitle(title) {
+    this.setState({title});
+  }
+
+  render() {
+    return (
+      <div>
+        <Header  />
+        <Footer />
+      </div>
+    );
+  }
 }
-
-export default App;
